@@ -1,0 +1,12 @@
+
+export const products = pgTable("products", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  sku: text("sku").unique().notNull(),
+  quantity: integer("quantity").default(0),
+  updatedAt: timestamp("updated_at").defaultNow(),
+});
+
+export const stockMovements = pgTable("stock_movements", {
+  id: serial("id").primaryKey(),
+  productId: integer("product_id").references(((
