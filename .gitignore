@@ -4,3 +4,4 @@ node_modules
 .env
 .env.local
 backend/db/.env
+node_modules

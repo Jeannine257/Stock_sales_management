@@ -1,4 +1,5 @@
-#!/usr/bin/env node
+cls
+code .env#!/usr/bin/env node
 
 /**
  * This script determines if a Vercel deployment should be skipped
